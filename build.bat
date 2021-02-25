@@ -1,8 +1,8 @@
 @echo off
-mkdir debug <br>
-cd debug <br>
-cmake -G "MinGW Makefiles" ../ <br>
-make <br>
+mkdir debug
+cd debug
+cmake -G "MinGW Makefiles" ../
+make
 clear
 .\Linked_Lists.exe
 pause
