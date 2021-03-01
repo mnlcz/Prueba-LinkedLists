@@ -130,6 +130,12 @@ void MostrarLista(const Lista* lista)
 
 void BorrarLista(Lista* lista)
 {
-    BorrarNodo(lista->primero);
+    auto iterador = lista->primero;
+    while(iterador != nullptr)
+    {
+        auto aux = iterador;
+        iterador = iterador->siguiente;
+        BorrarNodo(aux);
+    }
     delete lista;
 }
